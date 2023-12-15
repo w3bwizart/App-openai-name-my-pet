@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Quickstart</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='dog.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
+  <h3>Name my pet</h3>
+  <p>
+    Add your OpenAI key to the env.save file.<br /><br /> Code wil be wrapped in a promt and tampered with via code:
+    <br />
+    generate_image_url(prompt):<br />
+    setting = 'cyberpunk 2077'<br />
+    background = 'City ally'<br />
+    color = 'red, blue, pink', 'green'<br />
+    feature = ''<br />
+    detail = 'streetlight'<br />
+    light_source = 'streetlights'<br />
+    pattern = 'circles'<br />
+
+  </p>
+  <form action="/home" method="post">
+    <input type="text" name="prompt" placeholder="Enter a prompt" required />
+    <input type="submit" value="Generate image" />
+  </form>
+  {% if image_url %}
+  <img width="512px" height="512px" src="{{ image_url }}" alt="Generated Image">
+  {% endif %}
+</body>
