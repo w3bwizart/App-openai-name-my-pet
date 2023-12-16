@@ -1,5 +1,20 @@
-# OpenAI API - Name my pet
+# OpenAI API - Name my pet tutorial
 ## Tampering with the prompt in code 
+A first take on the OpenAI API's
+Receive an pet name and wrap the prompt with:
+
+def generate_image_url(prompt):
+   setting = 'cyberpunk 2077'
+   background = 'City ally'
+   color = 'red, blue, pink', 'green'
+   feature = ''
+   detail = 'streetlight'
+   light_source = 'streetlights'
+   pattern = 'circles'
+
+
+
+------------------------------------------------------------------
 
 This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Flask](https://flask.palletsprojects.com/en/2.0.x/) web framework. Check out the tutorial or follow the instructions below to get set up.
 
