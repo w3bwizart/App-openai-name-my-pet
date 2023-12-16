@@ -2,7 +2,7 @@
 ## Tampering with the prompt in code 
 A first take on the OpenAI API's
 Receive an pet name and wrap the prompt with:
-
+```
 def generate_image_url(prompt):
    setting = 'cyberpunk 2077'
    background = 'City ally'
@@ -11,7 +11,7 @@ def generate_image_url(prompt):
    detail = 'streetlight'
    light_source = 'streetlights'
    pattern = 'circles'
-
+```
 
 
 ------------------------------------------------------------------
